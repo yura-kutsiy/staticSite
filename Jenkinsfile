@@ -12,7 +12,7 @@ pipeline {
                     sh '''
                         git clone https://github.com/VolodymyrPasternak/BestShop
                         cd BestShop
-                        copy ../Dockerfile ./
+                        cp ../Dockerfile ./
                         docker build -t staticSite:0.1 .
                     '''
                 // }
