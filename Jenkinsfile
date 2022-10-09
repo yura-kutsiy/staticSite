@@ -12,7 +12,8 @@ pipeline {
                     sh '''
                         git clone https://github.com/VolodymyrPasternak/BestShop
                         cd BestShop
-                        docker build -t clock:0.1 .
+                        copy ../Dockerfile ./
+                        docker build -t staticSite:0.1 .
                     '''
                 // }
             }
